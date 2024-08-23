@@ -45,16 +45,14 @@ public struct VisualEffect: UIViewRepresentable {
     }
 }
 
-struct VisualEffect_Previews: PreviewProvider {
-    static var previews: some View {
-        ZStack {
-            Color.blue
-                .frame(width: 400, height: 400)
-            Color.red
-                .frame(width: 200, height: 100)
-            VisualEffect(colorTint: .white, colorTintAlpha: 0.5, blurRadius: 18)
-                .frame(width: 300, height: 200)
-        }
+#Preview {
+    ZStack {
+        Color.blue
+            .frame(width: 400, height: 400)
+        Color.red
+            .frame(width: 200, height: 100)
+        VisualEffect(colorTint: .white, colorTintAlpha: 0.5, blurRadius: 18)
+            .frame(width: 300, height: 200)
     }
 }
 
